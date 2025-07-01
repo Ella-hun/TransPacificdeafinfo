@@ -1,0 +1,306 @@
+/* 基础样式 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* 视口高度 */
+}
+
+
+/* 头部样式 */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.donate-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    /* 2px 白色实线边框 */
+}
+
+.donate a:hover {
+    background-color: #c2d62f;
+    /* 深红色背景 */
+    /* 如果需要悬停时边框变色，可以这样写： */
+    /* border-color: #ffd700; 黄色边框（示例） */
+}
+
+
+/* 主要内容区域样式 */
+
+main {
+    padding: 50px;
+}
+
+.history,
+.importance {
+    margin-bottom: 50px;
+}
+
+.yellow-line {
+    width: 600px;
+    /* 线条宽度（可调整） */
+    height: 6px;
+    /* 线条粗细 */
+    background-color: #FFD700;
+    /* 黄色 */
+    border: none;
+    /* 移除默认边框 */
+    margin: 10px 0 20px 0;
+    /* 调整线条上下间距 */
+    border-radius: 2px;
+    /* 可选：圆角效果 */
+}
+
+.history-image {
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.importance-image {
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* 页脚样式 */
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 0px;
+    text-align: center;
+}
+
+.newsletter {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 100px;
+    margin: 50px 20px;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin: 10px 0;
+}
+
+.quick-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.copyright {
+    font-size: 0.8em;
+}
+
+.top-navbar a:hover {
+    color: #e74c3c
+}
+
+.navbar-nav {
+    margin-left: 20px;
+    /* 向右移动20px，可调整数值 */
+}
+
+.navbar-nav ul {
+    margin-left: 600px;
+    /* 仅调整列表的左间距 */
+}
+
+.navbar-nav ul li a {
+    color: #ffffff;
+    /* 白色字体 */
+    font-size: 20px;
+    /* 字体大小 */
+    font-weight: 535;
+    /* 字体粗细（中等） */
+    text-decoration: none;
+    /* 去除下划线 */
+    letter-spacing: 0.5px;
+    /* 字符间距（可选，微调） */
+    transition: color 0.3s ease;
+    /* 悬停颜色过渡效果 */
+}
+
+.kuan {
+    height: 125px;
+    padding: 15px 0;
+    /* 上下内边距，左右为0（或保留一定内边距） */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.foot-box {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 13px;
+    background: #000;
+    color: #fff;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+/* 订阅区域整体样式 */
+
+.newsletter-section {
+    background-color: #7eabd7;
+    /* 深蓝色背景 */
+    padding: 20px 0;
+    /* 上下内边距 */
+}
+
+
+/* 容器：Flexbox 布局，左右排列 */
+
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    /* 两端对齐 */
+    align-items: center;
+    /* 垂直居中 */
+    max-width: 1200px;
+    /* 最大宽度 */
+    margin: 0 auto;
+    /* 居中 */
+    padding: 0 20px;
+    /* 左右内边距 */
+}
+
+
+/* 左侧标题样式 */
+
+.newsletter-title {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    /* 移除默认 margin */
+}
+
+
+/* 右侧表单样式 */
+
+.newsletter-form {
+    display: flex;
+    /* 输入框和按钮水平排列 */
+    gap: 10px;
+    /* 输入框和按钮之间的间距 */
+}
+
+
+/* 输入框样式 */
+
+.newsletter-input {
+    padding: 12px 15px;
+    /* 内边距 */
+    font-size: 1rem;
+    border: none;
+    /* 移除边框 */
+    border-radius: 4px;
+    /* 圆角 */
+    outline: none;
+    /* 移除聚焦时的默认轮廓 */
+    min-width: 250px;
+    /* 最小宽度，确保输入框不会太窄 */
+}
+
+
+/* 按钮样式 */
+
+.newsletter-button {
+    background-color: #3498db;
+    /* 蓝色按钮 */
+    color: white;
+    padding: 12px 25px;
+    /* 内边距 */
+    font-size: 1rem;
+    font-weight: 600;
+    /* 加粗 */
+    border: none;
+    border-radius: 4px;
+    /* 圆角 */
+    cursor: pointer;
+    /* 鼠标悬停时显示手型 */
+    transition: background-color 0.3s ease;
+    /* 悬停过渡效果 */
+}
+
+
+/* 按钮悬停效果 */
+
+.newsletter-button:hover {
+    background-color: #2980b9;
+    /* 深蓝色悬停效果 */
+}

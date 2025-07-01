@@ -1,0 +1,98 @@
+/* 导航栏整体样式 */
+
+.navbar {
+    background-color: #2c539e;
+    /* 深蓝色背景 */
+    padding: 15px 0;
+    /* 上下内边距 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 底部阴影 */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Logo样式 */
+
+.navbar-logo img {
+    height: 60px;
+    width: auto;
+}
+
+
+/* 导航链接样式 */
+
+.navbar-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    /* 导航链接之间的间距 */
+    margin-right: -10px;
+    /* 向右移动10px，靠近捐赠按钮 */
+    /* 或者使用 margin-right: 20px; 调整具体间距 */
+}
+
+
+/* 或者：调整整个 nav 的 margin-right */
+
+.navbar-nav {
+    margin-right: -10px;
+    /* 微调导航菜单向右移动 */
+}
+
+
+/* 更精确的方式：调整 nav 和 donate 之间的间距 */
+
+
+/* 方法1：给 nav 添加 margin-right */
+
+
+/* 方法2：给 donate 添加 margin-left */
+
+.navbar-donate {
+    margin-left: 10px;
+    /* 捐赠按钮向左移动10px */
+}
+
+
+/* 导航链接悬停效果 */
+
+.navbar-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-nav ul li a:hover {
+    color: #e74c3c;
+}
+
+
+/* 捐赠按钮样式 */
+
+.navbar-donate a {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    height: 40px;
+    line-height: 20px;
+}
+
+.navbar-donate a:hover {
+    background-color: #c0392b;
+}

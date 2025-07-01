@@ -1,0 +1,511 @@
+/* 基础样式 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* 视口高度 */
+}
+
+
+/* 头部样式 */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.donate-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    /* 2px 白色实线边框 */
+}
+
+.donate a:hover {
+    background-color: #c2d62f;
+    /* 深红色背景 */
+    /* 如果需要悬停时边框变色，可以这样写： */
+    /* border-color: #ffd700; 黄色边框（示例） */
+}
+
+
+/* 主要内容区域样式 */
+
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.event-poster {
+    max-width: 900px;
+    height: auto;
+    margin-right: 20px;
+    margin: 0 auto;
+    /* 水平居中 */
+}
+
+.event-details {
+    flex: 1;
+}
+
+.register-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* 页脚样式 */
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 0px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    /* 占满剩余空间 */
+}
+
+.newsletter {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 100px;
+    margin: 50px 20px;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin: 10px 0;
+}
+
+.quick-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.copyright {
+    font-size: 0.8em;
+}
+
+.top-navbar a:hover {
+    color: #e74c3c
+}
+
+.navbar-nav {
+    margin-left: 20px;
+    /* 向右移动20px，可调整数值 */
+}
+
+.navbar-nav ul {
+    margin-left: 600px;
+    /* 仅调整列表的左间距 */
+}
+
+.navbar-nav ul li a {
+    color: #ffffff;
+    /* 白色字体 */
+    font-size: 20px;
+    /* 字体大小 */
+    font-weight: 535;
+    /* 字体粗细（中等） */
+    text-decoration: none;
+    /* 去除下划线 */
+    letter-spacing: 0.5px;
+    /* 字符间距（可选，微调） */
+    transition: color 0.3s ease;
+    /* 悬停颜色过渡效果 */
+}
+
+.kuan {
+    height: 125px;
+    padding: 15px 0;
+    /* 上下内边距，左右为0（或保留一定内边距） */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.foot-box {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 13px;
+    background: #000;
+    color: #fff;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+/* 订阅区域整体样式 */
+
+.newsletter-section {
+    background-color: #7eabd7;
+    /* 深蓝色背景 */
+    padding: 20px 0;
+    /* 上下内边距 */
+}
+
+
+/* 容器：Flexbox 布局，左右排列 */
+
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    /* 两端对齐 */
+    align-items: center;
+    /* 垂直居中 */
+    max-width: 1200px;
+    /* 最大宽度 */
+    margin: 0 auto;
+    /* 居中 */
+    padding: 0 20px;
+    /* 左右内边距 */
+}
+
+
+/* 左侧标题样式 */
+
+.newsletter-title {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    /* 移除默认 margin */
+}
+
+
+/* 右侧表单样式 */
+
+.newsletter-form {
+    display: flex;
+    /* 输入框和按钮水平排列 */
+    gap: 10px;
+    /* 输入框和按钮之间的间距 */
+}
+
+
+/* 输入框样式 */
+
+.newsletter-input {
+    padding: 12px 15px;
+    /* 内边距 */
+    font-size: 1rem;
+    border: none;
+    /* 移除边框 */
+    border-radius: 4px;
+    /* 圆角 */
+    outline: none;
+    /* 移除聚焦时的默认轮廓 */
+    min-width: 250px;
+    /* 最小宽度，确保输入框不会太窄 */
+}
+
+
+/* 按钮样式 */
+
+.newsletter-button {
+    background-color: #3498db;
+    /* 蓝色按钮 */
+    color: white;
+    padding: 12px 25px;
+    /* 内边距 */
+    font-size: 1rem;
+    font-weight: 600;
+    /* 加粗 */
+    border: none;
+    border-radius: 4px;
+    /* 圆角 */
+    cursor: pointer;
+    /* 鼠标悬停时显示手型 */
+    transition: background-color 0.3s ease;
+    /* 悬停过渡效果 */
+}
+
+
+/* 按钮悬停效果 */
+
+.newsletter-button:hover {
+    background-color: #2980b9;
+    /* 深蓝色悬停效果 */
+}
+
+.main-title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* 图片行容器 */
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 单个图片项 */
+
+.image-item {
+    flex: 1;
+    min-width: 0;
+    max-width: 600px;
+}
+
+
+/* 图片标题样式 */
+
+.image-caption {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 500;
+}
+
+
+/* 图片样式 */
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.image-item img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+/* 响应式设计 */
+
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-title {
+        font-size: 1.8rem;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 英雄区域样式 */
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), #073B4C);
+    color: white;
+    padding: 4rem 0 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-title {
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.decorative-line {
+    width: 80px;
+    height: 4px;
+    background: var(--accent-color);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+
+/* 观点卡片样式 */
+
+.thought-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thought-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    border-bottom: 1px solid #eee;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.person-info {
+    flex: 1;
+}
+
+.name {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+    color: var(--secondary-color);
+}
+
+.role {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.card-content {
+    padding: 1.8rem 2rem;
+    font-size: 1.05rem;
+    color: #495057;
+}
+
+.card-content p:first-of-type::first-letter {
+    initial-letter: 2;
+    font-size: 2.2em;
+    color: var(--primary-color);
+    margin-right: 0.1em;
+    line-height: 0.9;
+    float: left;
+}
+
+.card-footer {
+    padding: 0 2rem 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tags {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.tag {
+    background: #e9ecef;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #495057;
+}
+
+
+/* 响应式设计 */
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+    .card-header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .card-content p:first-of-type::first-letter {
+        font-size: 1.8em;
+    }
+}
